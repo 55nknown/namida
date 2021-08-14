@@ -27,13 +27,13 @@ namespace Namida
 #define N_CORE_INFO(...)    ::Namida::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define N_CORE_WARN(...)    ::Namida::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define N_CORE_ERROR(...)   ::Namida::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define N_CORE_FATAL(...)   ::Namida::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define N_CORE_FATAL(...)   ::Namida::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client logging
 #define N_TRACE(...)   ::Namida::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define N_INFO(...)    ::Namida::Log::GetClientLogger()->info(__VA_ARGS__)
 #define N_WARN(...)    ::Namida::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define N_ERROR(...)   ::Namida::Log::GetClientLogger()->error(__VA_ARGS__)
-#define N_FATAL(...)   ::Namida::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define N_FATAL(...)   ::Namida::Log::GetClientLogger()->critical(__VA_ARGS__)
 
 #endif // __LOG_H__

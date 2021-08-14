@@ -1,7 +1,7 @@
 #ifndef __ENTRY_POINT_H__
 #define __ENTRY_POINT_H__
 
-#include "namida.h"
+#include "namida/namida.h"
 
 extern Namida::Application *Namida::CreateApplication();
 

@@ -14,7 +14,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 #
 set(engine_sources   namida/src/*.cpp)
 set(engine_vendor    namida/vendor/**/*.cpp)
-set(engine_libraries fmt)
+set(engine_libraries fmt glfw GL)
 
 include_directories(namida/include)
 include_directories(namida/vendor)

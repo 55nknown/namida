@@ -1,5 +1,4 @@
 #include "namida/application.h"
-
 #include "namida/events/application_event.h"
 #include "namida/log.h"
 
