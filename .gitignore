@@ -1,5 +1,8 @@
 build/
 .vscode/
-*.o
+.vs/
 lib/
 bin/
+
+*.o
+*.user

@@ -14,12 +14,15 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 #
 set(engine_sources   namida/src/*.cpp)
 set(engine_vendor    namida/vendor/**/*.cpp)
-set(engine_libraries )
+set(engine_libraries fmt)
 
 include_directories(namida/include)
 include_directories(namida/vendor)
 file(GLOB sources ${engine_sources})
 file(GLOB vendor  ${engine_vendor})
+
+add_compile_definitions(NAMIDA_BUILD_LIB)
+add_compile_definitions(SPDLOG_FMT_EXTERNAL)
 
 add_library(namida STATIC ${sources} ${vendor})
 target_link_libraries(namida ${engine_libraries})
