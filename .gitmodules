@@ -1,0 +1,3 @@
+[submodule "namida/vendor/spdlog"]
+	path = namida/vendor/spdlog
+	url = https://github.com/gabime/spdlog
